@@ -1,5 +1,7 @@
 def comparacion(inf, sup):
-    pass
+    comp = float(input('Número de comparación = '))
+    if (inf <= comp) and (comp <= sup):
+        print('\n' + str(comp) + ' está dentro.')
 
 
 def run():
@@ -8,7 +10,7 @@ def run():
     inferior = float(input('Límite inferior = '))
     superior = float(input('Límite superior = '))
 
-    print('Ahora sí, da un número para checar si está dentro del rango:')
+    print('\nAhora sí, da un número para checar si está dentro del rango:')
 
     comparacion(inferior, superior)
 
